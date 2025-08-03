@@ -20,8 +20,8 @@ const userSchema = new mongoose.Schema({
   },
   emergencyContacts: [
     {
-      name: String,
-      phone: String
+     type: [String],  // <-- simple array of strings
+    required: true
     }
   ]
 }, { timestamps: true });
